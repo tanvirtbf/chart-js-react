@@ -1,11 +1,34 @@
-import React from 'react'
+import {
+  CategoryScale,
+  Chart as ChartJS,
+  Legend,
+  LinearScale,
+  LineElement,
+  PointElement,
+  Title,
+  Tooltip,
+} from "chart.js";
+import { Line } from "react-chartjs-2";
 
-const Line = () => {
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
+const LineGraph = () => {
+
+  const options = {}
+
+  const data = {}
+
   return (
-    <div>
-      Line Graph
-    </div>
+    <Line options={options} data={data} />
   )
-}
+};
 
-export default Line
+export default LineGraph;

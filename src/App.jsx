@@ -1,11 +1,11 @@
 import './App.css'
-import Line from './components/Line'
+import LineGraph from './components/Line'
 
 function App() {
 
   return (
     <div className='App'>
-      <Line />
+      <LineGraph />
     </div>
   )
 }
