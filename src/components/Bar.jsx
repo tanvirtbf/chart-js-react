@@ -1,11 +1,31 @@
-import React from 'react'
+import {
+  CategoryScale,
+  Chart as ChartJS,
+  Legend,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+} from "chart.js";
+import { Bar } from "react-chartjs-2";
 
-const Bar = () => {
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
+
+const BarChart = () => {
+  
+  const options = {}
+
   return (
-    <div>
-      
-    </div>
+    <Bar options={options} data={} />
   )
 }
 
-export default Bar
+export default BarChart

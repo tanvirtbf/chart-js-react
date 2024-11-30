@@ -1,4 +1,5 @@
 import './App.css'
+import BarChart from './components/Bar'
 import LineGraph from './components/Line'
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
   return (
     <div className='App'>
       <div className='LineChart'>
-        <LineGraph />
+        {/* <LineGraph /> */}
+        <BarChart />
       </div>
     </div>
   )

@@ -21,3 +21,7 @@ export const lineChartData = {
     }
   ]
 }
+
+export const barChartData = {
+  labels : ['Rent', 'Groceries', ]
+}
