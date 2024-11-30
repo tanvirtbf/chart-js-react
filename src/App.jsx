@@ -5,7 +5,9 @@ function App() {
 
   return (
     <div className='App'>
-      <LineGraph />
+      <div className='LineChart'>
+        <LineGraph />
+      </div>
     </div>
   )
 }

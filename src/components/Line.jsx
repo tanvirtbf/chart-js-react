@@ -9,6 +9,7 @@ import {
   Tooltip,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
+import { lineChartData } from "../Fake_Data";
 
 ChartJS.register(
   CategoryScale,
@@ -24,10 +25,8 @@ const LineGraph = () => {
 
   const options = {}
 
-  const data = {}
-
   return (
-    <Line options={options} data={data} />
+    <Line options={options} data={lineChartData} />
   )
 };
 
