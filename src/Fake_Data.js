@@ -28,8 +28,8 @@ export const barChartData = {
     {
       label: "Expenses",
       data: [1200, 300,150,180,100],
-      backgroundColor: ["rgba(255,99,132,0.2)"],
-      borderColor: ["rgba(54,162,235,1)"],
+      backgroundColor: ["rgba(255,99,132,0.2)", 'blue','green'],
+      borderColor: ["rgba(54,162,235,1)", 'blue','green'],
       borderWidth: 1,
     }
   ]
