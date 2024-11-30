@@ -8,6 +8,7 @@ import {
   Tooltip,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
+import { barChartData } from "../Fake_Data";
 
 ChartJS.register(
   CategoryScale,
@@ -20,11 +21,11 @@ ChartJS.register(
 
 
 const BarChart = () => {
-  
+
   const options = {}
 
   return (
-    <Bar options={options} data={} />
+    <Bar options={options} data={barChartData} />
   )
 }
 
