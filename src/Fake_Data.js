@@ -17,7 +17,7 @@ export const lineChartData = {
     {
       label: 'Sadia',
       data: [2500,4000,4100,500,7000,7500,8500],
-      borderColor: "rgb(75,192,192)"
+      borderColor: "teal"
     }
   ]
 }
