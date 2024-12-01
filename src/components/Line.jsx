@@ -1,12 +1,10 @@
 import {
-  CategoryScale,
   Chart as ChartJS,
-  Legend,
+  CategoryScale,
   LinearScale,
   LineElement,
   PointElement,
-  Title,
-  Tooltip,
+  Legend
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 import { lineChartData } from "../Fake_Data";
@@ -16,9 +14,7 @@ ChartJS.register(
   LinearScale,
   PointElement,
   LineElement,
-  Title,
-  Tooltip,
-  Legend
+  Legend,
 );
 
 const LineGraph = () => {
@@ -34,11 +30,23 @@ const LineGraph = () => {
         text: 'This is a Line Chart here..',
         position: 'bottom'
       }
+    },
+    scales: {
+      y: {
+        min: 2000,
+        max: 10000
+      }
     }
   }
 
   return (
-    <Line options={options} data={lineChartData} />
+    <div style={{
+      width: '800px',
+      height: '500px',
+      padding: '20px'
+    }}>
+      <Line options={options} data={lineChartData} />
+    </div>
   )
 };
 

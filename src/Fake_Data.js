@@ -12,13 +12,13 @@ export const lineChartData = {
     {
       label: 'Tanvir',
       data: [3000,5000,4500,6000,8000,7000,9000],
-      borderColor: "rgb(75,192,192)"
+      backgroundColor: 'aqua',
+      borderColor: '#00CA8D',
+      pointBorderColor: 'aqua',
+      tension: 0.2,
+      pointRadius: 0,
+
     },
-    {
-      label: 'Sadia',
-      data: [2500,4000,4100,500,7000,7500,8500],
-      borderColor: "teal"
-    }
   ]
 }
 
